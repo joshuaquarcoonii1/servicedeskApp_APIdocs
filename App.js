@@ -48,7 +48,7 @@ const swaggerOptions = {
             contact: { type: "string" },
           },
         },
-        Report: {
+        Complaint: {
           type: "object",
           required: ["username", "complaint", "department", "location", "contact"],
           properties: {
@@ -380,7 +380,7 @@ app.post('/login', async (req, res) => {
  *                 example: "1234567890"
  *     responses:
  *       201:
- *         description: Report created successfully
+ *         description: Complaint created successfully
  *         content:
  *           application/json:
  *             schema:
@@ -388,8 +388,8 @@ app.post('/login', async (req, res) => {
  *               properties:
  *                 message:
  *                   type: string
- *                   example: "Report created successfully"
- *                 report:
+ *                   example: "Complaint created successfully"
+ *                 complaint:
  *                   $ref: '#/components/schemas/Report'
  *       400:
  *         description: Missing required fields
