@@ -347,7 +347,7 @@ app.post('/login', async (req, res) => {
  * @swagger
  * /reports:
  *   post:
- *     summary: Create a new report
+ *     summary: Create a new complaint
  *     tags: 
  *       - Report
  *     requestBody:
