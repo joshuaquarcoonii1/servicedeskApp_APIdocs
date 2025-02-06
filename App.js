@@ -48,7 +48,7 @@ const swaggerOptions = {
             contact: { type: "string" },
           },
         },
-        Complaint: {
+        Report: {
           type: "object",
           required: ["username", "complaint", "department", "location", "contact"],
           properties: {
