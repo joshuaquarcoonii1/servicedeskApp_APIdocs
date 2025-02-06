@@ -69,7 +69,7 @@ const ReportSchema = new mongoose.Schema({
   complaint: { type: String, required: true },
   department: { type: String, required: true, },
   location: { type: String, required: true,set: toUpperCase },
-  status: { type: String, default: 'New' },
+  status: { type: String, default: 'Active' },
   createdAt: { type: Date, default: Date.now },
   EscalatedAt:{type:Date,default:null},
   resolvedAt:{type: Date,default:null},
