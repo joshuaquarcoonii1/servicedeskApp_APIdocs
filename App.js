@@ -81,8 +81,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 
 // Replace this with your MongoDB connection string
-mongoose.connect('mongodb+srv://boss_1:joshq@cluster0.1sy3gyw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{ useNewUrlParser: true,
-  useUnifiedTopology: true,
+mongoose.connect('mongodb+srv://boss_1:joshq@cluster0.1sy3gyw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{ 
   dbName: 'ServiceDesk'})
 .then(()=>{
   console.log("database connected");
