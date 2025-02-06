@@ -56,7 +56,7 @@ const swaggerOptions = {
             complaint: { type: "string" },
             department: { type: "string" },
             location: { type: "string" },
-            status: { type: "string", default: "New" },
+            status: { type: "string", default: "Active" },
             createdAt: { type: "string", format: "date-time" },
             EscalatedAt: { type: "string", format: "date-time", nullable: true },
             resolvedAt: { type: "string", format: "date-time", nullable: true },
